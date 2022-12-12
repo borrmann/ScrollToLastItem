@@ -71,10 +71,10 @@
             </CollectionView.GroupHeaderTemplate>
         </CollectionView>
 
-        <Grid Grid.Row="1" ColumnDefinitions="*,50">
+        <Grid Grid.Row="1" ColumnDefinitions="*,100">
 
             <Editor Text="{Binding Text, Mode=TwoWay}"/>
-            <Button Grid.Column="1" Command="{Binding AddMessageCommand}"/>
+            <Button CornerRadius="20" Margin="10" Grid.Column="1" Text="send" Command="{Binding AddMessageCommand}"/>
         </Grid>
     </Grid>
     
